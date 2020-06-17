@@ -11,40 +11,24 @@ export default class AppProvider extends React.Component {
         super(props)
         this.actions = {
             // Functions Here
-            addShot: this.addShot,
-            addPlayer: this.addPlayer,
-            clearPlayers: this.clearPlayers,
+            addResults: this.addResults,
         }
         this.state = {
             // Attributes here
-            calcCart: [],
-            shot: [{result: 0, type: 'info'}],
-            players : [{name: 'Yoeli Childs', ppg: 15, rpg: 8, apg: 4, per: 27.67}],
+            results: [],
         }
         // Do not load data (the categories) here or else it would freeze the system
     }
     // Put Methods here
 
-    addShot = (results) => {
+    addResults = (results) => {
         let newRes = results
         this.setState(state => produce(state, draft => {
-            draft.shot.shift()            
-            draft.shot.unshift(newRes)
+            draft.results = []            
+            draft.results = newRes
         }))
     }
-
-    clearPlayers = () => {        
-        this.setState(state => produce(state, draft => {
-            draft.players = []            
-        }))
-    }
-
-    addPlayer = (results) => {
-        let newRes = results
-        this.setState(state => produce(state, draft => {
-            draft.players.push(newRes)
-        }))
-    }
+    
   
     render() {
         return (

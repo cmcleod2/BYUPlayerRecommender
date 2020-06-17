@@ -12,9 +12,10 @@ function About(props) {
                         </bs.Card.Title>
                         <hr />
                         <bs.Card.Text className='text-center mb-3' style={{fontSize: '20pt'}}>
-                            Have you ever wondered what it is like to shoot in a real NBA game? Well we will simulate that experience for you!
-                            Just enter the given information and we will tell you how likely you are to make a shot! With the time running down
-                            in the fourth quarter will you make the game winning shot? Let's find out!
+                            When the game is on the line and one of your best players gets into foul trouble how do you know which player will be
+                            the best replacement? It can be hard to know exactly which player will make the largest impact on the game. With
+                            our state of the art recommender tool, analytics will make the tough decisions for you. Not only will this maximize 
+                            game perfomance but will also give coaches something to blame losing efforts on.
                         </bs.Card.Text>
                     </bs.Card.Body>
                 </bs.Col>

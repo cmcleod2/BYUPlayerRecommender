@@ -10,14 +10,13 @@ function HeaderContainer(props) {
             <Link to='/' >
                 <bs.Navbar.Brand>
                     <bs.Image  src={Pic} height="50" width="50" alt="Basketball Logo"/>
-                    {'  '}Basketball Analytics
+                    {'  '} BYU Basketball
                 </bs.Navbar.Brand>
             </Link>
             <bs.Navbar.Toggle aria-controls="basic-Navbar-Nav" />
             <bs.Navbar.Collapse id="basic-Navbar-Nav">
                 <bs.Nav className="mr-auto">
-                    <Link to="/" className="nav-link">Predictor</Link>
-                    <Link to="/recommender" className="nav-link">Recommender</Link>
+                    <Link to="/" className="nav-link">Recommender</Link>
                     <Link to="/about" className="nav-link">About</Link>                
                 </bs.Nav>
                 <bs.Form inline>
